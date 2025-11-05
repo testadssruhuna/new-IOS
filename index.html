@@ -8,13 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <style>
-        /* Add your custom styles here */
         body {
             font-family: 'Arial', sans-serif;
         }
 
         h2 {
             font-size: 1.5rem;
+        }
+
+        .section-button {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+            background-color: #d1d5db; /* Tailwind's gray-300 */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .section-button:hover {
+            background-color: #9ca3af; /* Tailwind's gray-400 for hover effect */
         }
     </style>
 </head>
@@ -29,159 +46,94 @@
     <main class="max-w-7xl mx-auto p-6">
         <!-- General Division Section -->
         <section class="mt-10">
-            <h2 class="text-2xl font-semibold text-blue-800">🔹 General </h2>
+            <h2 class="text-2xl font-semibold text-blue-800">🔹 General Division</h2>
             <p class="mt-2 text-lg">General Documents and Trackers that are common across all divisions.</p>
-            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg">
-                <table class="min-w-full table-auto text-sm">
-                    <thead>
-                        <tr class="bg-blue-100">
-                            <th class="p-3 text-left">Document/Tracker</th>
-                            <th class="p-3 text-left">Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-t">
-                            <td class="p-3">Monthly Division Report</td>
-                            <td class="p-3">
-                                <a href="https://example.com/monthly-division-report" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Annual Summary Report</td>
-                            <td class="p-3">
-                                <a href="https://example.com/annual-summary-report" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Internal Meeting Minutes Sheet</td>
-                            <td class="p-3">
-                                <a href="https://example.com/meeting-minutes-sheet" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Member Attendance Tracker</td>
-                            <td class="p-3">
-                                <a href="https://example.com/member-attendance-tracker" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Task Assignment Sheet (Trello or Excel)</td>
-                            <td class="p-3">
-                                <a href="https://example.com/task-assignment-sheet" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Timeline & Milestone Tracker</td>
-                            <td class="p-3">
-                                <a href="https://example.com/timeline-milestone-tracker" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Performance Evaluation Sheet</td>
-                            <td class="p-3">
-                                <a href="https://example.com/performance-evaluation-sheet" class="text-blue-600 hover:underline">Link</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="mt-4 bg-white shadow-lg rounded-lg p-4">
+                <h3 class="text-xl font-semibold text-blue-600">Documents</h3>
+                <button class="section-button"><a href="https://example.com/monthly-division-report" class="text-black">Monthly Division Report</a></button>
+                <button class="section-button"><a href="https://example.com/annual-summary-report" class="text-black">Annual Summary Report</a></button>
+                <button class="section-button"><a href="https://example.com/meeting-minutes-sheet" class="text-black">Internal Meeting Minutes Sheet</a></button>
+                <button class="section-button"><a href="https://example.com/member-attendance-tracker" class="text-black">Member Attendance Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/task-assignment-sheet" class="text-black">Task Assignment Sheet</a></button>
+                <button class="section-button"><a href="https://example.com/timeline-milestone-tracker" class="text-black">Timeline & Milestone Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/performance-evaluation-sheet" class="text-black">Performance Evaluation Sheet</a></button>
+
+                <h3 class="text-xl font-semibold text-blue-600 mt-6">Trackers</h3>
+                <button class="section-button"><a href="https://example.com/monthly-division-report" class="text-black">Tracker 1</a></button>
+                <button class="section-button"><a href="https://example.com/annual-summary-report" class="text-black">Tracker 2</a></button>
+                <button class="section-button"><a href="https://example.com/meeting-minutes-sheet" class="text-black">Tracker 3</a></button>
+                <button class="section-button"><a href="https://example.com/member-attendance-tracker" class="text-black">Tracker 4</a></button>
             </div>
         </section>
 
-        <!-- Finance -->
+        <!-- Finance Division Section -->
         <section class="mt-10">
-            <h2 class="text-2xl font-semibold text-blue-800">🔹 1. Finance </h2>
+            <h2 class="text-2xl font-semibold text-blue-800">🔹 1. Finance Division</h2>
             <p class="mt-2 text-lg">Subdivisions: Financial Report Analyst, Partnership Specialist, Project Finance Specialist, Audit & Legal Analyst</p>
-            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg">
-                <table class="min-w-full table-auto text-sm">
-                    <thead>
-                        <tr class="bg-blue-100">
-                            <th class="p-3 text-left">Subdivision</th>
-                            <th class="p-3 text-left">Documents</th>
-                            <th class="p-3 text-left">Trackers</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-t">
-                            <td class="p-3">Financial Report Analyst</td>
-                            <td class="p-3">
-                                <a href="https://example.com/monthly-financial-summary" class="text-blue-600 hover:underline">Monthly Financial Summary</a><br>
-                                <a href="https://example.com/income-expense-ledger" class="text-blue-600 hover:underline">Income & Expense Ledger</a><br>
-                                <a href="https://example.com/annual-budget" class="text-blue-600 hover:underline">Annual Budget Document</a><br>
-                                <a href="https://example.com/cash-flow-statements" class="text-blue-600 hover:underline">Cash Flow Statements</a>
-                            </td>
-                            <td class="p-3">
-                                <a href="https://example.com/financial-transaction-tracker" class="text-blue-600 hover:underline">Financial Transaction Tracker</a><br>
-                                <a href="https://example.com/budget-utilization-tracker" class="text-blue-600 hover:underline">Budget Utilization Tracker</a><br>
-                                <a href="https://example.com/reimbursement-request-tracker" class="text-blue-600 hover:underline">Reimbursement Request Tracker</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Partnership Specialist</td>
-                            <td class="p-3">
-                                <a href="https://example.com/partnership-proposal-template" class="text-blue-600 hover:underline">Partnership Proposal Template</a><br>
-                                <a href="https://example.com/mou-agreement-records" class="text-blue-600 hover:underline">MoU/Agreement Records</a><br>
-                                <a href="https://example.com/partner-evaluation-report" class="text-blue-600 hover:underline">Partner Evaluation Report</a>
-                            </td>
-                            <td class="p-3">
-                                <a href="https://example.com/partner-communication-tracker" class="text-blue-600 hover:underline">Partner Communication Tracker</a><br>
-                                <a href="https://example.com/partnership-pipeline-tracker" class="text-blue-600 hover:underline">Partnership Pipeline Tracker</a><br>
-                                <a href="https://example.com/sponsorship-benefit-tracker" class="text-blue-600 hover:underline">Sponsorship Benefit Tracker</a>
-                            </td>
-                        </tr>
-                        <!-- Add the rest of the rows for other subdivisions -->
-                    </tbody>
-                </table>
+            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg p-4">
+                <h3 class="text-xl font-semibold text-blue-600">Documents</h3>
+                <button class="section-button"><a href="https://example.com/monthly-financial-summary" class="text-black">Monthly Financial Summary</a></button>
+                <button class="section-button"><a href="https://example.com/income-expense-ledger" class="text-black">Income & Expense Ledger</a></button>
+                <button class="section-button"><a href="https://example.com/annual-budget" class="text-black">Annual Budget Document</a></button>
+                <button class="section-button"><a href="https://example.com/cash-flow-statements" class="text-black">Cash Flow Statements</a></button>
+
+                <h3 class="text-xl font-semibold text-blue-600 mt-6">Trackers</h3>
+                <button class="section-button"><a href="https://example.com/financial-transaction-tracker" class="text-black">Financial Transaction Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/budget-utilization-tracker" class="text-black">Budget Utilization Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/reimbursement-request-tracker" class="text-black">Reimbursement Request Tracker</a></button>
             </div>
         </section>
 
-        <!-- Marketing-->
+        <!-- Marketing Division Section -->
         <section class="mt-10">
-            <h2 class="text-2xl font-semibold text-blue-800">🔹 2. Marketing </h2>
+            <h2 class="text-2xl font-semibold text-blue-800">🔹 2. Marketing Division</h2>
             <p class="mt-2 text-lg">Subdivisions: Brand, Web Development, Showcasing</p>
-            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg">
-                <table class="min-w-full table-auto text-sm">
-                    <thead>
-                        <tr class="bg-blue-100">
-                            <th class="p-3 text-left">Subdivision</th>
-                            <th class="p-3 text-left">Documents</th>
-                            <th class="p-3 text-left">Trackers</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-t">
-                            <td class="p-3">Brand</td>
-                            <td class="p-3">
-                                <a href="https://example.com/brand-guideline-manual" class="text-blue-600 hover:underline">Brand Guideline Manual</a><br>
-                                <a href="https://example.com/content-strategy-document" class="text-blue-600 hover:underline">Content Strategy Document</a><br>
-                                <a href="https://example.com/visual-identity-kit" class="text-blue-600 hover:underline">Visual Identity Kit</a>
-                            </td>
-                            <td class="p-3">
-                                <a href="https://example.com/brand-engagement-tracker" class="text-blue-600 hover:underline">Brand Engagement Tracker</a><br>
-                                <a href="https://example.com/campaign-performance-tracker" class="text-blue-600 hover:underline">Campaign Performance Tracker</a><br>
-                                <a href="https://example.com/social-media-growth-tracker" class="text-blue-600 hover:underline">Social Media Growth Tracker</a>
-                            </td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-3">Web Development</td>
-                            <td class="p-3">
-                                <a href="https://example.com/website-content-plan" class="text-blue-600 hover:underline">Website Content Plan</a><br>
-                                <a href="https://example.com/seo-analytics-report" class="text-blue-600 hover:underline">SEO & Analytics Report</a><br>
-                                <a href="https://example.com/system-maintenance-log" class="text-blue-600 hover:underline">System Maintenance Log</a>
-                            </td>
-                            <td class="p-3">
-                                <a href="https://example.com/web-update-tracker" class="text-blue-600 hover:underline">Web Update Tracker</a><br>
-                                <a href="https://example.com/seo-keyword-tracker" class="text-blue-600 hover:underline">SEO Keyword Tracker</a><br>
-                                <a href="https://example.com/visitor-analytics-tracker" class="text-blue-600 hover:underline">Visitor Analytics Tracker</a>
-                            </td>
-                        </tr>
-                        <!-- Add the rest of the rows for other subdivisions -->
-                    </tbody>
-                </table>
+            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg p-4">
+                <h3 class="text-xl font-semibold text-blue-600">Documents</h3>
+                <button class="section-button"><a href="https://example.com/brand-guideline-manual" class="text-black">Brand Guideline Manual</a></button>
+                <button class="section-button"><a href="https://example.com/content-strategy-document" class="text-black">Content Strategy Document</a></button>
+                <button class="section-button"><a href="https://example.com/visual-identity-kit" class="text-black">Visual Identity Kit</a></button>
+
+                <h3 class="text-xl font-semibold text-blue-600 mt-6">Trackers</h3>
+                <button class="section-button"><a href="https://example.com/brand-engagement-tracker" class="text-black">Brand Engagement Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/campaign-performance-tracker" class="text-black">Campaign Performance Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/social-media-growth-tracker" class="text-black">Social Media Growth Tracker</a></button>
             </div>
         </section>
 
         <!-- Operations & Academic Management Section -->
-        <!-- Add similar structure as above for other divisions -->
+        <section class="mt-10">
+            <h2 class="text-2xl font-semibold text-blue-800">🔹 3. Operations & Academic Management Division</h2>
+            <p class="mt-2 text-lg">Subdivisions: Actuarial Studies, Software Development, Economics & Management, Finance Studies</p>
+            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg p-4">
+                <h3 class="text-xl font-semibold text-blue-600">Documents</h3>
+                <button class="section-button"><a href="https://example.com/academic-program-outline" class="text-black">Academic Program Outline</a></button>
+                <button class="section-button"><a href="https://example.com/actuarial-skill-matrix" class="text-black">Actuarial Skill Matrix</a></button>
+                <button class="section-button"><a href="https://example.com/workshop-plans" class="text-black">Workshop Plans</a></button>
+
+                <h3 class="text-xl font-semibold text-blue-600 mt-6">Trackers</h3>
+                <button class="section-button"><a href="https://example.com/student-progress-tracker" class="text-black">Student Progress Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/academic-session-tracker" class="text-black">Academic Session Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/study-material-tracker" class="text-black">Study Material Tracker</a></button>
+            </div>
+        </section>
+
+        <!-- Personal Development Division Section -->
+        <section class="mt-10">
+            <h2 class="text-2xl font-semibold text-blue-800">🔹 4. Personal Development Division</h2>
+            <p class="mt-2 text-lg">Subdivisions: Content & Training, Resource & Community, Career Coaching & Mentorship, Event & Engagement</p>
+            <div class="overflow-x-auto mt-4 bg-white shadow-lg rounded-lg p-4">
+                <h3 class="text-xl font-semibold text-blue-600">Documents</h3>
+                <button class="section-button"><a href="https://example.com/training-module-template" class="text-black">Training Module Template</a></button>
+                <button class="section-button"><a href="https://example.com/skill-assessment-form" class="text-black">Skill Assessment Form</a></button>
+                <button class="section-button"><a href="https://example.com/training-outcome-report" class="text-black">Training Outcome Report</a></button>
+
+                <h3 class="text-xl font-semibold text-blue-600 mt-6">Trackers</h3>
+                <button class="section-button"><a href="https://example.com/training-attendance-tracker" class="text-black">Training Attendance Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/participant-progress-tracker" class="text-black">Participant Progress Tracker</a></button>
+                <button class="section-button"><a href="https://example.com/skill-certification-tracker" class="text-black">Skill Certification Tracker</a></button>
+            </div>
+        </section>
 
         <footer class="mt-10 bg-blue-800 text-white p-6 text-center">
             <p>&copy; 2025 ADSS RUHUNA. All rights reserved.</p>
